@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.chf</groupId>
+  <artifactId>SpringMVC</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+    
+    <!-- 指定字符编码和版本信息 -->
+  <properties>  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+        <spring.version>4.2.1.RELEASE</spring.version>  
+    </properties>  
+    
+    <dependencies>  
+         
+        <!-- Spring 框架基本的核心工具类 -->  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-core</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        
+         <!-- Spring 核心提供了大量扩展 -->
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>   
+        
+      <!-- SpringMVC -->
+    <dependency>    
+        <groupId>org.springframework</groupId>    
+        <artifactId>spring-webmvc</artifactId>    
+        <version>${spring.version}</version>    
+    </dependency>  
+    <!-- SpringAop -->
+    <dependency>    
+        <groupId>org.springframework</groupId>    
+        <artifactId>spring-aop</artifactId>    
+        <version>${spring.version}</version>    
+    </dependency>
+  </dependencies>
+
+</project>

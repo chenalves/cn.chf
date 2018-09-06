@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cn.chf</groupId>
+  <artifactId>Spring</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>  
+  <!-- 指定字符编码和版本信息 -->
+  <properties>  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+        <spring.version>4.2.1.RELEASE</spring.version>  
+    </properties>  
+    
+    <dependencies>  
+    
+        <dependency>  
+        <!-- jcl提供简单的日志实现以及日志解耦 -->
+            <groupId>commons-logging</groupId>  
+            <artifactId>commons-logging</artifactId>  
+            <version>1.1.1</version>  
+        </dependency>  
+ 
+        <!-- Spring 框架基本的核心工具类 -->  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-core</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+         <!-- 包含访问配置文件、创建和管理bean  -->
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-beans</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+         <!-- Spring 核心提供了大量扩展 -->
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>   
+         <!-- Spring表达式语言 -->
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-expression</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+  
+  
+    </dependencies>  
+</project>
